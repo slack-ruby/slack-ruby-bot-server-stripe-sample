@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Mongoid.load!(File.expand_path('../../config/mongoid.yml', __dir__), ENV['RACK_ENV'])
 
 RSpec.configure do |config|
