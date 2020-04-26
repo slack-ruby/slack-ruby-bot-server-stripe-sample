@@ -8,7 +8,7 @@ gem 'mongoid'
 gem 'mongoid-scroll'
 gem 'newrelic-slack-ruby-bot'
 gem 'slack-ruby-bot-server', github: 'slack-ruby/slack-ruby-bot-server'
-gem 'slack-ruby-bot-server-stripe', path: '/Users/dblock/source/slack/slack-ruby-bot-server-stripe/slack-ruby'
+gem 'slack-ruby-bot-server-stripe', github: 'slack-ruby/slack-ruby-bot-server-stripe'
 gem 'unicorn'
 
 group :test do
