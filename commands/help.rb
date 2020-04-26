@@ -1,13 +1,12 @@
 class Help < SlackRubyBot::Commands::Base
   HELP = <<-EOS.freeze
 ```
-I am your friendly slack-ruby-bot-server, here to help.
+Sample bot that uses slack-ruby-bot-server-stripe.
 
 General
 -------
 
 help               - get this helpful message
-whoami             - print your username
 
 ```
 EOS
