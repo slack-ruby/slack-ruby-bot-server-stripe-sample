@@ -10,6 +10,7 @@ gem 'newrelic-slack-ruby-bot'
 gem 'slack-ruby-bot-server', github: 'slack-ruby/slack-ruby-bot-server'
 gem 'slack-ruby-bot-server-stripe', github: 'slack-ruby/slack-ruby-bot-server-stripe'
 gem 'unicorn'
+gem 'irb'
 
 group :test do
   gem 'capybara'

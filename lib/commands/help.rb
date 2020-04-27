@@ -5,10 +5,12 @@ class Help < SlackRubyBot::Commands::Base
     ```
     Sample bot that uses slack-ruby-bot-server-stripe.
 
-    General
-    -------
+    Commands
+    --------
 
     help               - get this helpful message
+    subscription       - get subscription info
+    unsubscribe        - unsubscribe
 
     ```
   EOS

@@ -23,6 +23,19 @@ class Team
 
   private
 
+  def slack_client
+    @slack_client ||= Slack::Web::Client.new(token: token)
+  end
+
+  def slack_channels
+    slack_client.channels_list(
+      exclude_archived: true,
+      exclude_members: true
+    )['channels'].select do |channel|
+      channel['is_member']
+    end
+  end
+
   def inform!(message)
     slack_channels.each do |channel|
       message_with_channel = message.merge(channel: channel['id'], as_user: true)

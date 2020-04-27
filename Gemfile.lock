@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/slack-ruby/slack-ruby-bot-server-stripe.git
-  revision: 72a04b49cc2911105e90abf079274307a1ce852c
+  revision: 3c7e0de6c13ffab2a775a05a1c80e5847e12924e
   specs:
     slack-ruby-bot-server-stripe (0.1.0)
       slack-ruby-bot-server (>= 0.12.0)
@@ -116,6 +116,9 @@ GEM
       domain_name (~> 0.5)
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
+    io-console (0.5.6)
+    irb (1.2.3)
+      reline (>= 0.0.1)
     kaminari-core (1.2.0)
     kaminari-grape (1.0.1)
       grape
@@ -167,6 +170,8 @@ GEM
     raindrops (0.19.1)
     rake (13.0.1)
     regexp_parser (1.7.0)
+    reline (0.1.4)
+      io-console (~> 0.5)
     representable (3.0.4)
       declarative (< 0.1.0)
       declarative-option (< 0.2.0)
@@ -240,6 +245,7 @@ DEPENDENCIES
   database_cleaner
   fabrication
   faker
+  irb
   mongoid
   mongoid-scroll
   newrelic-slack-ruby-bot
