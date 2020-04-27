@@ -1,27 +1,3 @@
-GIT
-  remote: git://github.com/slack-ruby/slack-ruby-bot-server-stripe.git
-  revision: 3c7e0de6c13ffab2a775a05a1c80e5847e12924e
-  specs:
-    slack-ruby-bot-server-stripe (0.1.0)
-      slack-ruby-bot-server (>= 0.12.0)
-      stripe (~> 1.58.0)
-
-GIT
-  remote: git://github.com/slack-ruby/slack-ruby-bot-server.git
-  revision: f600d164f03b7be22dcf28d91b2162b79f18506b
-  specs:
-    slack-ruby-bot-server (0.12.0)
-      async-websocket (~> 0.8.0)
-      foreman
-      grape
-      grape-roar (>= 0.4.0)
-      grape-swagger
-      kaminari-grape
-      rack-cors
-      rack-rewrite
-      rack-server-pages
-      slack-ruby-bot (>= 0.12.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -205,6 +181,20 @@ GEM
     slack-ruby-bot (0.14.0)
       hashie
       slack-ruby-client (>= 0.14.0)
+    slack-ruby-bot-server (0.12.0)
+      async-websocket (~> 0.8.0)
+      foreman
+      grape
+      grape-roar (>= 0.4.0)
+      grape-swagger
+      kaminari-grape
+      rack-cors
+      rack-rewrite
+      rack-server-pages
+      slack-ruby-bot (>= 0.12.0)
+    slack-ruby-bot-server-stripe (0.1.0)
+      slack-ruby-bot-server (>= 0.12.0)
+      stripe (~> 1.58.0)
     slack-ruby-client (0.14.6)
       activesupport
       faraday (>= 0.9)
@@ -253,8 +243,8 @@ DEPENDENCIES
   rake
   rspec
   selenium-webdriver
-  slack-ruby-bot-server!
-  slack-ruby-bot-server-stripe!
+  slack-ruby-bot-server
+  slack-ruby-bot-server-stripe
   unicorn
   vcr
   webmock
