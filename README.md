@@ -1,7 +1,7 @@
 Slack Ruby Bot Server Stripe Sample
 ===================================
 
-[![Build Status](https://travis-ci.org/slack-ruby/slack-ruby-bot-server-stripe-sample.svg?branch=master)](https://travis-ci.org/slack-ruby/slack-ruby-bot-server-stripe-sample)
+[![ci](https://github.com/slack-ruby/slack-ruby-bot-server-stripe-example/actions/workflows/ci.yml/badge.svg)](https://github.com/slack-ruby/slack-ruby-bot-server-stripe-example/actions/workflows/ci.yml)
 
 ### What is this?
 
