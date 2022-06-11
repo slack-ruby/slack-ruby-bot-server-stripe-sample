@@ -1,8 +1,6 @@
-name: ci
+name: Tests
 
-on:
-  push:
-  pull_request:
+on: [push, pull_request]
 
 jobs:
   test:
@@ -15,12 +13,9 @@ jobs:
         with:
           firefox-version: "54.0"
       - name: Download geckodriver
-        run: |
-          wget https://github.com/mozilla/geckodriver/releases/download/v0.18.0/geckodriver-v0.18.0-linux64.tar.gz
-          mkdir geckodriver
-          tar -xzf geckodriver-v0.18.0-linux64.tar.gz -C geckodriver
-          echo "$PWD/geckodriver" >> $GITHUB_PATH
-        shell: bash
+        uses: browser-actions/setup-geckodriver@latest
+        with:
+          geckodriver-version: "0.18.0"
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -29,7 +24,7 @@ jobs:
       - name: Start MongoDB
         uses: supercharge/mongodb-github-action@1.7.0
         with:
-          mongodb-version: "4.0"
+          mongodb-version: "5"
           mongodb-db: slack-ruby-bot-server-stripe_sample_test
       - name: Run tests
         uses: GabrielBB/xvfb-action@v1
